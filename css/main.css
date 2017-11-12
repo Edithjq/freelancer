@@ -1,3 +1,428 @@
 /*
  * Estilos de tu proyecto
  */
+
+/*RESETEO*/
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+}
+
+/*cabecera*/
+header{
+	width: 100%;
+	position: fixed; /*fijo*/
+	top: 0;
+	background-color: #2c3e50;
+	z-index: 1000; /*para que este por encima del resto de elementos*/
+	padding: 10px 20px;
+}
+
+/*contenedor*/
+nav{
+
+	width: 85%;
+	padding: 10px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	
+	/*outline: 1px solid orange;*/
+	box-sizing: border-box;
+	overflow: auto;
+
+}
+
+/*aplica para todos los a*/
+a{
+	display: block;
+	padding: 10px;
+	width: 100%;
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	
+}
+/*logo*/
+nav .logo{
+	/*outline: 1px solid aqua;*/
+	float: left;
+	width: 40%;
+	
+}
+nav .logo a{
+	width: 100%;
+	/*outline: 1px solid red;*/
+	font-size: 2em;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+nav .menu{
+	margin-top: 10px;
+	float: right;
+	/*outline: 1px solid yellow;*/
+	
+}
+nav .menu li{
+	float: left;
+
+	margin-left: 10px;
+	list-style: none;
+}
+nav ul li a{
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/*pseudoclases de hover:mouse pasa por ensima, active: cuando se hace clic*/
+.menu a:hover{
+	color: #18bc9c;
+}
+.menu a:active{
+	background-color: #18bc9c;
+	color: white;
+	border-radius: 5px;
+}
+
+/*presentacion
+.portfolio{
+	background-color: ;
+	border-radius: 5px;
+}*/
+
+/*-------------SECTION PRINCIPAL-------------*/
+#principal{
+	background-color: #18bc9c;
+	padding-top: 200px;
+	width: 100%;
+	text-align: center;
+	/*outline: 1px solid red;*/
+}
+
+.imagenes figure{
+	float: top;
+}
+
+.texto_principal h1{
+	font-size: 5em;
+	font-weight: 700;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 30px 0px 30px 0px;
+	/*outline:  1px solid red;*/
+}
+.texto_principal h2{
+	font-family: "Lato", sans-serif;
+	font-size: 1.8em;
+	font-weight: 500;
+	color: white;
+	padding: 0px 0px 100px 0px;
+	text-transform: capitalize;/*la primera letra en mayuscula*/
+
+
+}
+/*------------ SECTION PORTAFOLIO-------*/
+#portfolio{
+	   outline: 1px solid red;
+		/*encuadrar al centro*/
+		padding-top: 80px;
+		padding-bottom: 80px;
+}
+#portfolio .titulo h1{
+	font-size: 3em;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding-bottom: 25px;
+	color:  #212529; /*color del texto*/
+	
+}
+/*contenedor de imagenes*/
+.imagenes{
+	/*outline: 1px solid red;*/
+	
+	width: 80%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	column-count: 3;
+}
+
+.imagenes figure{
+	/*outline: 1px solid blue;*/
+	text-align: center;
+	position:relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 0px;
+	padding: 10px;
+	
+}
+
+
+.imagenes figure img{
+	width: 100%;
+	
+}
+
+
+/*---------- SECTION  ABOUT----------------*/
+
+#about{
+	/*outline: 1px solid blue;*/
+	background-color: #18bc9c;
+	padding-top: 60px;
+	display: inline-block;
+}
+#about h2{
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-size: 3em;
+	margin-bottom: 30px;
+}
+
+
+#parrafos{
+	width: 60%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	column-count: 2;
+	text-align: center;
+	box-sizing: border-box;
+	
+	/*outline: 1px solid yellow;*/
+
+}
+
+.titulo{
+	text-align: center;
+}
+
+
+#parrafos p{
+	text-align: left;
+	padding: 5px;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+/*general*/
+p{  
+
+	line-height: 1.5em;
+	color: white;
+	font-size: 18px;
+	font-weight: 400;/*grosor de fuente*/
+
+	/*outline: 1px solid red;*/
+}
+
+/*------CONTENEDOR DE ICON START---------*/
+/* hr  donde se encuentra el icon start*/
+.hr-start{	
+	max-width: 250px;
+	width: 250px;
+	margin: auto;
+	text-align: center;
+	border-top: 5px solid #2c3e50;
+	
+
+	
+}
+/*linea blanca*/
+.start-white{
+	border-top: 5px solid white;
+}
+
+/*div q contiene el icon de la estrella*/
+.div-icon-start{
+	display:  inline-block;
+	position: relative;
+	top: -35px;
+	/*outline: 1px solid red;*/
+	padding: 15px;
+
+}
+.div-white{
+	background-color: white;
+	color: #2c3e50;
+}
+.div-green{
+	background-color: #18bc9c;
+	color: white;
+}
+
+
+
+/*-----------BOTON DOWNLOAD---------------------*/
+.download{
+	border: 2px solid white;
+	display: inline-block;
+	position: relative;
+	transform: translateX(-50%);
+	left: 50%;
+	margin-top: 30px;
+	margin-bottom: 100px;
+	border-radius: 5px;
+
+
+}
+.download a{
+padding: 10px;
+line-height: 1.5;
+font-size: 20px;  /*tamaño de fuente*/ 
+font-weight: 400; /*grosor de fuente*/
+text-transform: capitalize; /*primera letra mayuscula*/
+}
+
+.download a:hover{
+	background-color: white;
+	color: #18bc9c;
+	
+}
+
+
+/*---------SECTION FORMULARIO----*/
+
+.contact{
+	width: 100%;
+
+}
+form{
+	text-align: center;
+	display: inline-block;
+}
+.container-formulario{
+	display: inline-block;
+	width: 80%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	
+	/*outline: 1px solid red;*/
+}
+.container-formulario h2{ 
+	/*outline: 1px solid green;*/
+	text-align: center;
+	text-transform: uppercase;
+	color: black;
+	font-size: 3em;
+	margin-top: 70px;
+	padding: 10px;
+	margin-bottom: 30px;
+}
+
+.input-form{
+	font-size: 1.5em;
+	width: 30em;
+	height: 2em;
+	margin-bottom: 30px;
+	display: block;
+	border:none;
+	border-bottom: 1px solid black;
+	opacity: 0.5;
+
+}
+
+label{
+	opacity: 0;
+}
+
+.send button{
+	width: 100px;
+	text-align: left;
+	padding: 10px;
+	font-size: 1.3em;
+	font-weight: bold;
+	background-color: #18bc9c;
+	color: white;
+	text-align: center;
+	line-height: 1.5;
+	border-radius: 10px;
+	margin: 80px;
+
+}
+
+button{
+	text-align: left;
+}
+
+/*----------------FOOTER--------------------*/
+
+footer{
+	width: 100%;
+	display: inline-block;
+	background-color: 
+#2c3e50;
+	text-align: center;
+}
+.section-footer{
+	column-count: 3;
+	display: inline-block;
+	margin-top: 40px;
+	width: 80%;
+	text-align: center;
+	padding-bottom: 20px;
+	
+	/*outline: 1px solid blue;*/
+}
+
+/*titulos centrales del footer*/
+.section-footer div span{
+	font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 1.7em;
+	display: inline-block;
+	padding-bottom: 40px;
+
+    
+}
+/*conteiner de link de redes sociales*/
+.redes-sociales{
+	display: inline-block;
+	text-align: center; /*centrar el div cuando este inline-block*/
+	column-count: 5;
+	column-gap: 3pt; /*margen  de las columnas*/
+	margin:0px;
+	padding: 0px;
+	/*outline: 1px solid green;*/
+	
+}
+
+
+/*link de redes sociales*/
+.redes-sociales a{  
+	text-align: center;
+	width: 100%;
+	border:2px solid white;
+	border-radius: 50%;
+	padding: 15px; 
+}
+/*hover de iconos de redes sociales*/
+.redes-sociales a:hover{
+	background-color: white;
+	color: #18bc9c;
+}
+/*link start bootstrap*/
+.text-footer p a{
+	color: #18bc9c;
+} 
+
+/*hover de link start bootstrap*/
+.text-footer p a:hover{
+	text-decoration: underline;
+}
+.cophyright{
+	padding-top: 70px;
+}
